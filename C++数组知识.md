@@ -32,3 +32,11 @@ int *p=new int[size];
 //释放动态数组
 delete p;
 ```
+
+### 使用数组初始化vector的方法
+```cpp
+//With only language support you can use:
+
+int tmp[] = { 10, 20, 30 };
+std::vector<int> v( tmp, tmp + 3 ); // use some utility to avoid hardcoding the size here
+```
